@@ -1,0 +1,35 @@
+{
+  "name": "padaria-do-ca-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "check": "node --check server.js && node --check config/index.js && node --check config/db.js && node --check src/controller/auth.js && node --check utils/validation/index.js"
+  },
+  "keywords": [
+    "express",
+    "mysql",
+    "api",
+    "autenticacao"
+  ],
+  "author": "Nickolas Augusto",
+  "license": "ISC",
+  "description": "API de autenticação da Padaria do CA",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.21.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
